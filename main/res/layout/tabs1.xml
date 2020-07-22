@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity$PlaceholderFragment">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical" >
+
+
+                <TextView
+                    android:id="@+id/AttRecenti"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Dettagli Attività Recenti"
+                    android:textStyle="bold"
+                    android:linksClickable="true"/>
+
+        <ListView
+            android:id="@+id/listaAttività"
+            android:layout_width="match_parent"
+            android:layout_height="199dp">
+        </ListView>
+
+
+        <Button
+            android:id="@+id/addNewAct"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:shadowColor="@color/colorAccent"
+            android:text="+Aggiungi nuova attività"
+            android:textColor="?android:attr/colorPressedHighlight" />
+
+        <Button
+            android:id="@+id/statistiche"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Statistiche" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

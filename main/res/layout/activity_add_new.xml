@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddNewActivity">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|enterAlways"
+            app:popupTheme="@style/AppTheme.PopupOverlay"
+            app:title="@string/app_name2">
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/card_view"
+            android:layout_width="354dp"
+            android:layout_height="434dp"
+            android:layout_gravity="center"
+            card_view:layout_constraintEnd_toEndOf="parent"
+            card_view:layout_constraintHorizontal_bias="1.0"
+            card_view:layout_constraintStart_toStartOf="parent"
+            tools:ignore="MissingConstraints"
+            tools:layout_editor_absoluteY="35dp">
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <AutoCompleteTextView
+                    android:id="@+id/Data"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_Data"
+                    android:inputType="date"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/Durata"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_Durata"
+                    android:inputType="time"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/VelMedia"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_VelMedia"
+                    android:inputType="time"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/VelMax"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_VelMax"
+                    android:inputType="time"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+
+                <AutoCompleteTextView
+                    android:id="@+id/Calorie"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/prompt_Calorie"
+                    android:inputType="time"
+                    android:maxLines="1"
+                    android:singleLine="true" />
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        <android.support.design.widget.FloatingActionButton
+            android:id="@+id/floatingActionButton2"
+            android:layout_width="80dp"
+            android:layout_height="121dp"
+            android:baselineAlignBottom="false"
+            android:clickable="true"
+            android:layout_marginLeft="150dp"
+            app:backgroundTint="@android:color/holo_blue_light"
+            app:barrierAllowsGoneWidgets="false"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@android:drawable/ic_menu_add"
+            tools:layout_editor_absoluteY="398dp"
+            tools:ignore="MissingConstraints" />
+    </LinearLayout>
+</android.support.constraint.ConstraintLayout>
